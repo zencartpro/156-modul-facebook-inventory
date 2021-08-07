@@ -1,5 +1,5 @@
 <?php
-define('TEXT_FACEBOOKINVENTORY_STARTED', 'Facebook Feeder v%s gestartet ' . date("Y/m/d H:i:s"));
+define('TEXT_FACEBOOKINVENTORY_STARTED', 'Facebook Feeder gestartet ' . date("Y/m/d H:i:s"));
 define('TEXT_FACEBOOKINVENTORY_FILE_LOCATION', 'Feed Datei - ');
 define('TEXT_FACEBOOKINVENTORY_FEED_COMPLETE', 'Facebook Datei vollständig');
 define('TEXT_FACEBOOKINVENTORY_FEED_TIMER', 'Zeit:');
