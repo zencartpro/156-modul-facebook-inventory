@@ -6,7 +6,7 @@
  * @copyright Portions Copyright 2003-2021 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: facebookinventory.php 2021-08-05 08:33:54Z webchills $
+ * @version $Id: facebookinventory.php 2021-08-07 17:42:54Z webchills $
  */
  
   class facebookinventory {
@@ -249,7 +249,7 @@
                            '', false, 150);
       while (!$cat->EOF) {
         $cats[$cat->fields['categories_id']]['name'] = (zen_not_null($cName) ? $cName . ', ' : '') . trim($cat->fields['categories_name']); // previously used zen_froogle_sanita instead of trim
-        $cats[$cat->fields['categories_id']]['cPath'] = (zen_not_null($cPath) ? $cPath . ',' : '') . $cat->fields['categories_id'];
+        $cats[$cat->fields['categories_id']]['cPath'] = (zen_not_null($cPath) ? $cPath . '_' : '') . $cat->fields['categories_id'];
         if (zen_has_category_subcategories($cat->fields['categories_id'])) {
           $cats = $this->facebookinventory_category_tree($cat->fields['categories_id'], $cats[$cat->fields['categories_id']]['cPath'], $cats[$cat->fields['categories_id']]['name'], $cats);
         }
