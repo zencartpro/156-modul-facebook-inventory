@@ -6,7 +6,7 @@
  * @copyright Portions Copyright 2003-2021 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: 1_0_0.php 2021-08-07 15:33:54Z webchills $
+ * @version $Id: 1_0_0.php 2021-08-07 19:11:54Z webchills $
  */
 
 
@@ -32,7 +32,6 @@ $db->Execute("INSERT IGNORE INTO ".TABLE_CONFIGURATION." (configuration_title, c
 ('Menge im Produktfeed', 'FACEBOOKINVENTORY_IN_STOCK', 'false', 'Soll der Lagerbestand der Artikel ins Produktfeed übernommen werden?', @gid, 17, NOW(), NULL, 'zen_cfg_select_option(array(\'true\', \'false\'),'),
 ('Artikel mit Menge Null aufnehmen', 'FACEBOOKINVENTORY_ZERO_QUANTITY', 'false', 'Sollen Artikel aufgenommen werden, deren Lagerbestand Null ist?', @gid, 18, NOW(), NULL, 'zen_cfg_select_option(array(\'true\', \'false\'),'),
 ('Menge Voreinstellung', 'FACEBOOKINVENTORY_DEFAULT_QUANTITY', '0', 'Welche Mengenangabe wollen Sie für Artikel mit Lagerbestand Null?', @gid, 19, NOW(), NULL, NULL), 
-('Datum des Uploads', 'FACEBOOKINVENTORY_UPLOADED_DATE', '', 'Datum und Uhrzeit des letzen Uploads', @gid, 20, NOW(), NULL, NULL),
 ('Verzeichnis des Produktfeeds', 'FACEBOOKINVENTORY_DIRECTORY', 'feed/facebookinventory/', 'Geben Sie hier das Verzeichnis an, in dem das Produktfeed gespeichert werden soll.', @gid, 21, NOW(), NULL, NULL),
 ('cPath in der URL verwenden', 'FACEBOOKINVENTORY_USE_CPATH', 'false', 'Sollen die Artikel URLs den cPath enthalten?', @gid, 22, NOW(), NULL, 'zen_cfg_select_option(array(\'true\', \'false\'),'),
 ('Maximale Artikelanzahl', 'FACEBOOKINVENTORY_MAX_PRODUCTS', '0', 'Voreinstellung = 0 für unbegrenzte Artikelanzahl', @gid, 23, NOW(), NULL, NULL),
